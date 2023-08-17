@@ -1,0 +1,9 @@
+{% extends "./base.html" %}
+{% block content %}
+<h1>Create Bank</h1>
+  <form method="post">
+    {% csrf_token %}      
+    {% include './form.html' %}
+    <button type="submit">Submit</button>
+  </form>
+{% endblock %}
